@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./css-reset.css">
-    <link rel="stylesheet" type="text/css" href="./item-result.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/css-reset.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/item-result.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
     <nav class="item-result-navigation">
         <div class="navigation-logo">
-            <img src="./logo.png" class="logo">
+            <img src="./images/logo.png" class="logo">
         </div>
         <div class="navigation-items-container">
             <div class="input-runescape">
@@ -34,7 +35,7 @@
         <div class="index-title">
             <div class="warcraft-image-flex-container">
                 <div class="warcraft-container">
-                    <img src="./warcraft.png">
+                    <img src="./images/warcraft.png">
                 </div>
                 <h1>World of Warcraft</h1>
             </div>
@@ -43,7 +44,7 @@
         <div class="item-container">
             <div class="kingston-sword-container">
                 <p>K I N G S T O N &nbsp; S W O R D</p>
-                <img src="./kingston_sword.png" alt="">
+                <img src="./images/kingston_sword.png" alt="">
             </div>
             <div class="kingston-sword-details-container">
                 <div class="item-address-container">
@@ -69,12 +70,28 @@
         <div class="graph-container">
             <div class="item-total-graph-container">
                 <span class="item-total-graph-container-title">I T E M &nbsp; T O T A L &nbsp; S U P P L Y :</span> <span class="item-total-graph-container-value">&nbsp; 1 0 0 K</span>
+                <div id="chart">
+                    <img src="./images/ring.png" alt="" class="ring">
+                </div>
             </div>
             <div class="hour-bar-graph-container">
                 <p>2 4 &nbsp; H O U R &nbsp; T R A D E S</p>
+                <svg id="hour-trades"></svg>
+                <div class=times>
+                    <p>1 2 A M</p>
+                    <p>3 P M</p>
+                    <p>6 A M</p>
+                    <p>9 A M</p>
+                    <p>1 2 P M</p>
+                    <p>3 P M</p>
+                    <p>6 P M</p>
+                    <p>9 P M</p>
+                </div>
             </div>
         </div>
     </div>
     <h2 class="copyright">Stardust Inc. 2019</h2>
+    <script src="./graph.js"></script>
+    <script src="./pie.js"></script>
 </body>
 </html>
