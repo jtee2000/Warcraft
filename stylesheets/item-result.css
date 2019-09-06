@@ -4,7 +4,7 @@ html {
 
 body {
     min-height: 100%; 
-    background-image: url("background.png");
+    background-image: url("../images/background.png");
 }
 
 .item-result-navigation {
